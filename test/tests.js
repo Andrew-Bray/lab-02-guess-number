@@ -1,0 +1,1 @@
+import './comparenumber.test.js';

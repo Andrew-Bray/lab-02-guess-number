@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="gutter-right logo">
+            <img src="assets/big-logo.png"/>
+        </div>
+    </header>
+    <main>
+        <section class="main-section">
+        <!--    HTML Elements
+            - independent content : instructions.
+            - input - where the person can put in a number between one and 20.
+            - button - 1) On click, the number of guesses increases by one. 2) on click the input is fed into the function
+            -Output - telling them higher , lower or correct
+            - output telling them how many more guresses
+            Reset Button - on click reset game -->
+            <h2> Hello there friendly user!</h2>   
+            <h3> How about a friendly game of guess the number?</h3>
+            <br>
+            <p> I'm picking a number between 0 and 20. Can you guess it?</p> 
+            <input id="my-guess" type="number">
+            <br>
+            <button id="submit-guess">I think I'm right</button>
+            <br>
+            <div id="coaching"></div>
+            <div id="remaining-indicator"></div>
+            <br>
+            <button id="reset-button" class="hidden">Start Over</button>
+
+        </section>
+    </main>
+    <footer>
+        <div class="copy gutter-right">&copy; 2020 Alchemy Code Lab</div>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+
+</html>
